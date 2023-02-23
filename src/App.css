@@ -12,3 +12,9 @@
     height: 250px;
     object-fit: contain;
 }
+
+.cart-item{
+    background-color: #f9f9f9;
+    margin-top: 50px;
+    padding: 100px 0;
+}

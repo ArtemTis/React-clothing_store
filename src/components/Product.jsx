@@ -3,19 +3,14 @@ import { useParams } from "react-router-dom";
 import ShowProduct from './ShowProduct';
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
-import { useDispatch } from 'react-redux';
-import {addCart} from '../redux/action'
+// import { useDispatch } from 'react-redux';
+// import {addCart} from '../redux/action'
 
 const Product = () => {
 
     const { id } = useParams();
     const [product, setProduct] = useState([]);
     const [loading, setLoading] = useState(false);
-
-    // const dispatch = useDispatch()
-    // const addProduct = (product) => {
-    //     dispatch(addCart(product));
-    // }
 
     useEffect(() => {
         const getProduct = async () => {
